@@ -1,0 +1,79 @@
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking Service</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <main class="container" role="main">
+            <h2 class="title">Booking Service</h2>
+
+            <form class="booking-form" action="#" method="post" novalidate>
+                <div class="form-grid">
+                    <label for="jenis">Jenis Kendaraan</label>
+                    <div class="field">
+                        <select id="jenis" name="jenis" aria-label="Jenis Kendaraan">
+                            <option>Minibus</option>
+                            <option>Sedan</option>
+                            <option>Pickup</option>
+                            <option>Truck</option>
+                        </select>
+                    </div>
+
+                    <label for="nama">Nama Pemesan:</label>
+                    <div class="field">
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+
+                    <label>Kategori Peminjam :</label>
+                    <div class="field radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="pribadi" name="kategori" value="Pribadi" checked>
+                            <label for="pribadi">Pribadi</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="perusahaan" name="kategori" value="Perusahaan">
+                            <label for="perusahaan">Perusahaan/Organisasi</label>
+                        </div>
+                    </div>
+
+                    <label for="deskripsi">Deskripsi Kebutuhan</label>
+                    <div class="field">
+                        <textarea id="deskripsi" name="deskripsi" placeholder="Jelaskan kebutuhan, titik jemput, tujuan, dan informasi tambahan..."></textarea>
+                    </div>
+
+                    <label for="tanggal">Jam, Tanggal Service:</label>
+                    <div class="field date-group">
+                        <input type="time" id="waktu" name="waktu" class="time-input" aria-label="Waktu Service">
+                        <input type="date" id="tanggal" name="tanggal" class="date-input" aria-label="Tanggal Service">
+                    </div>
+
+                    <label for="montir">Request Montir</label>
+                    <div class="field">
+                        <input type="text" id="montir" name="montir">
+                    </div>
+
+                    <label for="telpon">Telpon/HP :</label>
+                    <div class="field">
+                        <input type="tel" id="telpon" name="telpon" placeholder="0812xxxx" pattern="[0-9+\- ]+">
+                    </div>
+
+                    <label for="email">Email</label>
+                    <div class="field">
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div></div>
+                    <div class="buttons">
+                        <button type="submit" class="btn primary">Submit</button>
+                        <button type="reset" class="btn">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+    </body>
+    </html>
